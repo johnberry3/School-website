@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: bottom-to-top 1.7s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 7;
+    width: 100%;
+    box-shadow: 0px 20px 10px 16px rgba(0, 0, 0, 0.12);
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+  }
+  .nav-link{
+      list-style: none;
+      display: inline-block;
+      margin-right: 90px;
+      
+  }
+  .nav-link a{
+      text-decoration: none;
+      color: rgb(2, 29, 71);
+      font-weight: bolder;
+      text-transform: uppercase;
+      animation: bottom-to-right 1.7s infinite ;
+  }
+  .logo{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+  }
+  .logo h4{
+      line-height: 20px;
+  }
+  .logo p{
+      font-size: 12px;
+      color: rgb(111, 177, 5);
+  }
+  .logo img{
+      width: 70px;
+      height: 75px;
+      padding-right: 3px;
+      border-right: 2px solid #124872;
+  }
+  .nav-link a:hover{
+    border-bottom: 2px solid #193245;
+    transition: all 0.5s;
+}
+.card-body i{
+    width: 30px;
+    height: 20px;
+    border-radius: 45%;
+    padding: 15px;
+    color: white;
+    background-color: #124872;
+}
+.card-body{
+    padding: 40px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    text-align: center;
+}
+.card-body i{
+    
+}
+.card-link{
+    list-style: none;
+}
+.content{
+    position: relative;
+    top: 7rem;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   gap: 5rem;
+   justify-content: center;
+}
+.container{
+    position: relative;
+    width: 500px;
+    top: 7rem;
+    left: 5rem;
+    z-index: -5;
+}
+
+/* Address Block */
+.contact-title{
+  font-size: 20px;
+}
+
+.touch{
+    position: relative;
+}
+header{
+    position: relative;
+    top: 6rem;
+    z-index: 5;
+    color: #fff;
+    text-align: center;
+    background-image: url(../image/school3.png);
+    background-position: center;
+    background-size: cover;
+    width: 1306px;
+    padding: 30px;
+}
+h2{
+    margin-left: 9px;
+    color: #E54910;
+    font-size: 40px;
+}
+.form .form-group{
+    padding: 10px;
+}
+.form input[type="text"]  {
+   padding: 10px;
+   width: 100%;
+   outline: none;
+}
+.form input[type="text"] :hover{
+   border: 5px solid #123550;
+}
+.form label{
+    color: #fff;
+    display: block;
+}
+.form textarea{
+    height: 80px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+.form input[type="submit"] {
+      background-color: #193245;
+      color: #fff;
+      width: 483px;
+      padding: 8px 15px;
+      font-weight: bolder;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 5px;
+      margin-left: 9px;
+}
+input::placeholder{
+    font-size: 16px;
+    color: #ccc;
+}
+
