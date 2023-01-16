@@ -466,14 +466,14 @@ form button{
 
 @media (max-width:500px){
     header{
-        max-width: 340px;
+        max-width: 400px;
         padding: 20px ;
         padding-right: 20px;
         gap: 1rem;
         width: 100%;
     }
     body{
-        max-width: 350px;
+        max-width: 400px;
         width: 100%;
     }
     .logo h4, 
@@ -544,7 +544,7 @@ form button{
     }
     .hero{
         min-height: 500px;
-        max-width: 340px;
+        max-width: 400px;
         width: 100%;
     }
     .hero-section{
@@ -615,8 +615,10 @@ form button{
     }
     .wrap-image{
         grid-template-columns: repeat(2, 1fr);
-        right: 2rem;
-        justify-content: center;
+        margin-left: 7px;
+    }
+    .wrap h1{
+        font-size: 14px;
     }
     .wrap-image img{
         width: 150px;
@@ -631,10 +633,11 @@ form button{
         padding-right: 2rem;
     }
     .principal-image{
-        margin-left: 4rem;
+        margin-left: 1rem;
     }
     .principal-image img{
-        width: 400px;
+        width: 300px;
+        height: 350px;
     }
     .Head{
         width: 400px;
@@ -654,12 +657,34 @@ form button{
         align-items: center;
         justify-content: center;
     }
+    .form-group input{
+        height: 40px;
+        padding: 30px 20px;
+        width: 100%;
+        margin-right: 20px;
+        outline: none;
+        border: none;
+    }
+    form button{
+        padding:1px 25px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 10px;
+        color: #fff;
+        background-color: #000;
+    }
+    .footer-1-container li{
+        font-size: 13px;
+    }
+    .News-text p{
+        font-size: 15px;
+    }
     .form_icon {
         top: 10rem;
         left: 5rem
     }
     footer{
-        max-width: 330px;
+        max-width: 530px;
         width: 100%;
     }
 }
