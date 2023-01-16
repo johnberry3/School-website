@@ -5,8 +5,6 @@
     font-family: 'poppins', sans-serif;
 }
 header{
-    display: flex;
-    justify-content: space-between;
     padding: 15px 40px;
     align-items: center;
     background-color: #fff;
@@ -17,9 +15,17 @@ header{
     width: 100%;
     box-shadow: 0px 20px 10px 16px rgba(0, 0, 0, 0.12);
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .royal{
     color: #124872;
     font-weight: bolder;
+}
+.mobile{
+    display: none;
 }
  a{
   text-decoration: none;
@@ -418,17 +424,138 @@ form button{
     color: #fff;
 }
 
-@media (max-width:500px){
+@media(max-width:800px){
     header{
-        
+        padding: 15px;
+        gap: 3rem;
+        width: 100%;
     }
-    .hero{
-        min-height: 500px;
+    .mobile{
+        display: block;
+    }
+    .mobile i{
+        font-size: 2rem;
+        border: 1px solid black;
+        padding: 4px;
+        cursor: pointer;
     }
     .Desktop-nav{
         display: none;
     }
+    .show{
+        overflow: hidden;
+        display: flex;
+    }
+    .mobile-bar{
+        position: relative;
+    }
     .mobile-Nav{
+        position: absolute;
+        display: block;
+        padding: 30px;
+        top: 0;
+        width: 100%;
+        color: #000;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 7;
+        height: 100vh;
+        float: right;
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    header{
+        max-width: 340px;
+        padding: 20px ;
+        padding-right: 20px;
+        gap: 1rem;
+        width: 100%;
+    }
+    body{
+        max-width: 330px;
+        width: 100%;
+    }
+    .logo h4, 
+    .logo p{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    nav{
+        display: flex;
+        gap: 9rem;
+        align-items: center;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile i{
+        font-size: 2rem;
+        border: 1px solid black;
+        padding: 4px;
+        cursor: pointer;
+    }
+    .show{
+        overflow: hidden;
+        display: flex;
+    }
+    .mobile-bar{
+        position: relative;
+    }
+    .mobile-Nav{
+        position: absolute;
+        display: block;
+        padding: 30px;
+        top: 0;
+        width: 100%;
+        color: #000;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 7;
+        height: 100vh;
+        float: right;
+        display: none;
+    }
+    .mobile-Nav li{
+        list-style: none;
+        padding-bottom: 2rem;
+        align-items: center;
+    }
+    .mobile-Nav i{
+        float: right;
+        font-size: 3rem;
+        font-weight: light;
+        cursor: pointer;
+    }
+    .mobile-Nav li a{
+        color: #ccc;
+        font-weight: bolder;
+    }
+    .mobile-Nav li a:hover{
+        background-color: #113f63;
+        color: #fff;
+        width: 200px;
+        width: 100%;
+        border-radius: 5px;
+        transition: all 0.5s;
+    }
+    .hero{
+        min-height: 500px;
+        max-width: 340px;
+        width: 100%;
+    }
+    .hero-section{
+        padding: 8px;
+        position: relative;
+        top: 6rem;
+    }
+    .hero-btn{
+        font-size: 12px;
+    }
+    .Desktop-nav{
         display: none;
     }
     .mobile-bar i{
@@ -473,32 +600,49 @@ form button{
     }
     .content{
         flex-wrap: wrap;
-        width: 400px;
+        width: 300px;
         gap: 1rem;
     }
     .content-text h1{
         font-size: 25px;
     }
     .content-image img{
-        width: 450px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
     .content-text p{
         line-height: normal;
     }
     .wrap-image{
         grid-template-columns: repeat(2, 1fr);
+        right: 2rem;
+        justify-content: center;
+    }
+    .wrap-image img{
+        width: 150px;
+        height: 150px;
     }
     .lad{
         flex-wrap: wrap;
         width: 400px;
+        position: relative;
+        right: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .principal-image{
+        margin-left: 4rem;
     }
     .principal-image img{
         width: 400px;
     }
+    .Head{
+        width: 400px;
+        padding: 30px;
+        background-color: #0C8387;
+    }
     .Head-content{
         flex-wrap: wrap;
-        margin: auto;
         justify-content: center;
     }
     .News{
@@ -513,5 +657,9 @@ form button{
     .form_icon {
         top: 10rem;
         left: 5rem
+    }
+    footer{
+        max-width: 330px;
+        width: 100%;
     }
 }

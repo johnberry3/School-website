@@ -64,8 +64,7 @@ a{
     transition: all 0.5s;
 }
 .card-body i{
-    width: 30px;
-    height: 20px;
+    font-size: 3rem;
     border-radius: 45%;
     padding: 15px;
     color: white;
