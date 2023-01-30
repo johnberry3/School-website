@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 100%;
@@ -119,6 +120,9 @@ header{
     width: 1306px;
     padding: 30px;
 }
+.mobile-Nav{
+    display: none;
+}
 h2{
     margin-left: 9px;
     color: #E54910;
@@ -161,3 +165,83 @@ input::placeholder{
     color: #ccc;
 }
 
+@media(max-width: 390px) {
+   nav{
+    max-width: 200px;
+    width: 100%;
+   }
+   header{
+    max-width: 200px;
+   }
+   .content{
+    max-width: 300px;
+    width: 100%;
+    margin-right: 30px;
+   }
+}
+
+
+@media(max-width:500px) {
+    nav{
+        max-width: 500px;
+        width: 100%;
+    }
+    header{
+        width: 400px;
+        width: 100%;
+    }
+    .mobile-Nav{
+        display: block;
+        position: absolute;
+        z-index: 7;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding: 30px;
+        color: #fff;
+        background-color: #000;
+        list-style: none;
+        display: none;
+    }
+    .mobile-Nav a{
+       color: #fff;
+    }
+    .mobile-link{
+        padding: 20px 10px;
+        padding-bottom: 25px;
+        font-size: 20px;
+    }
+    .close-btn{
+        position: relative;
+        float: right;
+        top: 25px;
+        width: 2rem;
+        font-size: 2.5rem;
+    }
+    .menu-bar{
+        position: absolute;
+        z-index: 2.5;
+
+    }
+    .content{
+        max-width: 400px;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    .Desktop-Nav{
+        display: none;
+    }
+    .container{
+        max-width: 400px;
+        position: relative;
+        width: 400px;
+        top: 10rem;
+        left: 3rem;
+    }
+    .form input[type="submit"]{
+        width: 380px;
+    }
+
+}
