@@ -27,13 +27,13 @@
              <li class="nav-link"><a href="#">Contact</a></li>
           </div>
 
-          <div class="menu-bar">
-              <i class="fas fa-bars"></i>
+          <div class="menu-bar mobile " id="bars">
+              <i class="fas fa-bars mobile"></i>
           </div>
     </nav>
 
     <div class="mobile-Nav" id="mobile-nav">
-      <i class="fas fa-times  close-btn"></i>
+      <i class="fas fa-times  close"></i>
        <li class="mobile-link"><a href="index.html">Home</a></li>
        <li class="mobile-link"><a href="">About</a></li>
        <li class="mobile-link"><a href="">Gallery</a></li>
@@ -66,7 +66,7 @@
        </div>
     </div>
 
-    <div class="card-2">
+    <div class="column">
         <div class="card-body">
             <i class="Fas fa-envelope"></i>
             <h2 class="contact-title">Mail Us</h2>
@@ -75,7 +75,7 @@
          </div>
     </div>
 
-    <div class="card-3">
+    <div class="column">
         <div class="card-body">
             <a href="#" class="logo-link"><i class="Fas fa-clock"></i></a>
             <h2 class="contact-title">Opening Hours</h2>
@@ -84,7 +84,7 @@
          </div>
     </div>
 
-    <div class="card-3">
+    <div class="column">
         <div class="card-body">
             <a href="#" class="logo-link"><i class="Fas fa-map-marker-alt"></i></a>
             <h2 class="contact-title">Address</h2>
@@ -93,36 +93,123 @@
     </div>
 </div>
   <!--fORM BLOCK-->
-    <div class="container">
-     <div class="Touch">
-        <h2>Get in Touch</h2>
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+   <!-- FOOTER BLOCK-------- -->
+   <footer>
+    <div class="News">
+         <div class="News-text">
+              <h1>Newsletter</h1>
+              <p>Subscribe to our News letter</p>
+         </div>
+
+       <div class="News-input">
         <form class="form">
            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" placeholder="Enter your name">
-           </div>
-   
-           <div class="form-group">
-              <label for="name">Email:</label>
-              <input type="text" name="email" placeholder="Enter your email">
-           </div>
-   
-           <div class="form-group">
-              <label for="name">Message:</label>
-              <textarea name="Message"></textarea>
-           </div>
-           <input class="button" type="submit" value="Submit">
-      </form>
-     </div>
-     <div class="socai-links">
-      <a href="#"><i class="fas fa-facebook"></i></a>
-      <a href="#"><i class="fas fa-facebook"></i></a>
-      <a href="#"><i class="fas fa-facebook"></i></a>
-      <a href="#"><i class="fas fa-facebook"></i></a>
-    </div>
+               <input type="email" placeholder="Enter Email Address to Subcribe" required>
 
-    </div>
+               <div class="form_icon">
+                  <i class="fas fa-envelope"></i>
+               </div>
+           </div>
 
-    
+           <button>Sign Up</button>
+        </form>
+       </div>
+
+        </div>
+
+        <div class="Lower-footer">
+           <div class="footer-container">
+               <div class="footer-text">
+                   <div class="footer-img">
+                       <a href="#">
+                           <img src="./image/school logo.png" alt="">
+                       </a>
+                   </div>
+                    <div class="footer-title">
+                       <h4>Royal Nations <br>Academy</h4>
+                       <p><em>Rising to Excellence</em></p>
+                    </div>
+                </div>
+
+                <div class="comment">
+                     <p>Royal Nations Academy(RNA), founded in September 2010, is the brain-child of Prof. Adewomi Folaji</p>
+                </div>
+            </div>
+
+            <div class="footer-2-container">
+               <h5>Quick Links</h5>
+               <hr> <br>
+               <ul>
+                   <li class="footer-link"><a href="#home">Home</a></li>
+                   <li class="footer-link"><a href="#home">About</a></li>
+                   <li class="footer-link"><a href="#home">Gallery</a></li>
+                   <li class="footer-link"><a href="#home">Admission</a></li>
+                   <li class="footer-link"><a href="contact.html">Contacts</a></li>
+               </ul>
+            </div> 
+
+           <div class="footer-1-container">
+               <h4>Opening Hours</h4>
+               <hr> <br>
+                <div class="time-content">
+                   <div class="day">
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                   </div>
+                   <div class="time">
+                       <li>8:00 ----- 5:00</li>
+                       <li>8:00 ----- 5:00</li>
+                       <li>8:00 ----- 5:00</li>
+                       <li>8:00 ----- 5:00</li>
+                       <li>8:00 ----- 5:00</li>
+                   </div>
+                </div>
+
+           </div>
+            <div class="footer-3-container">
+               <h4>Contact us</h4>
+               <hr> <br>
+               <p>2-6,Hamza lebron street <br>Gwarinpa, Fct Abuja <br> Nigeria. <br> +2349121557688 <br> <br>info@Royalnations.org</p> 
+               
+               <div class="socai-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            
+           </div>
+</footer>
+   
+  <script src="js/contact.js"></script>
 </body>
 </html>

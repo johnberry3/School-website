@@ -91,6 +91,8 @@ nav{
     position: relative;
     top: 5rem;
     min-height: 100vh;
+    border-bottom-right-radius: 70%;
+    background-color: #113f63;
     /* animation: bottom-to-top 1.7s ; */
 }
 .hero:hover{
@@ -190,22 +192,26 @@ hr{
 .card1{
    background-color: #E54910;
    border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .card2{
     background-color: #193245;
     color: #fff;
     border-radius: 10px;
     margin-top: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     
 }
 .card3{
     background-color: #0C8387;
     border-radius: 10px;
     margin-top: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .card4{
     background-color: #C70039;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*ABOUT SECTION*/
@@ -231,6 +237,9 @@ hr{
     padding: 25px;
     border-right: 2px solid #193245;
     border-bottom: 2px solid #193245;
+}
+.content-image{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .content-text{
     position: relative;
@@ -278,8 +287,11 @@ hr{
 .wrap-image{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    padding-left: 30px;
     margin-left: 2rem;
     grid-gap: 10px;
     grid-column-gap: -17px;
@@ -296,11 +308,16 @@ hr{
    transform: scale(110%);
    transition: all 1s;
 }
+.principal-block{
+    background-color: rgb(204, 204, 204, 0.1);
+    padding: 10px;
+}
 
 .lad{
     margin-top: 30rem;
     display: flex;
     max-width: 1200px;
+    align-items: center;
     justify-content: center;
     gap: 3rem;
     margin-left: 4rem;
@@ -309,14 +326,30 @@ hr{
     width: 500px;
     height: 400px;
 }
+.principal-text{
+    margin-top: -14px;
+}
 .principal-image P{
-    background-color: #E54910;
+    background-color: #113f63;
     border-bottom-right-radius: 90%;
     color: #fff;
 }
 .principal-text p{
     text-align: justify;
-    line-height: 30px;
+    line-height: 25px;
+}
+#more {display: none;}
+#myBtn{
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: #113f63;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .lock{
     overflow: hidden;
@@ -417,6 +450,11 @@ form button{
     padding-bottom: 7px;
     border-bottom: 1px solid rgb(185, 184, 184);
 }
+.time-content{
+    display: flex;
+    gap: 5rem;
+    text-align: justify;
+}
 .footer-1-container hr,
 .footer-2-container hr,
 .footer-3-container hr{
@@ -435,10 +473,12 @@ form button{
 @media (max-width:500px){
     header{
         max-width: 500px;
-        padding: 20px ;
-        padding-right: 20px;
+        
         gap: 1rem;
         width: 100%;
+    }
+    body{
+        position: relative;
     }
     .logo h4, 
     .logo p{
