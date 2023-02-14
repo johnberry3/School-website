@@ -223,7 +223,21 @@ hr{
     justify-content: center;
     max-width: 1200px;
     gap: 5rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+}
 
+.animy{
+    animation: bottom-to-top 1.5s linear;
+    
+}
+@keyframes bottom-to-top{
+    0%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(10%);
+    }
 }
 .content h1{
     position: relative;
@@ -678,6 +692,9 @@ form button{
         width: 100%;
         padding: 30px;
         background-color: #0C8387;
+    }
+    .image-content{
+        width: 350px;
     }
     .Head-content{
         flex-wrap: wrap;

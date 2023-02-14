@@ -12,6 +12,9 @@ body{
     background-color: #f7f5f5;
 }
 nav{
+   
+}
+.navbar{
     display: flex;
     justify-content: space-between;
     padding: 15px 40px;
@@ -104,6 +107,8 @@ a{
     top: 7rem;
     left: 5rem;
     z-index: -5;
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
 }
 
 /* Address Block */
@@ -276,9 +281,12 @@ form button{
     padding-bottom: 7px;
     border-bottom: 1px solid rgb(185, 184, 184);
 }
+.footer-3-container{
+    text-align: justify;
+}
 .time-content{
     display: flex;
-    gap: 5rem;
+    gap: 1rem;
     text-align: justify;
 }
 .footer-1-container hr,
@@ -307,19 +315,46 @@ form button{
 }
 
 
-@media(max-width: 390px) {
+@media(max-width: 400px) {
    nav{
-    max-width: 200px;
+    max-width: 400px;
     width: 100%;
    }
+   .navbar{
+    max-width: 390px;
+    width: 100%;
+    padding: 20px;
+    padding-left: 3px;
+    padding-right: 50px;
+    align-items: center;
+    gap: 4rem;
+   }
    header{
-    max-width: 200px;
+    max-width: 500px;
    }
    .content{
     max-width: 300px;
     width: 100%;
     margin-right: 30px;
    }
+   .container{
+    max-width: 350px;
+    width: 100px;
+    position: relative;
+    padding: 0px 10px;
+    left: 0;
+    margin-left: -40px;
+   }
+   input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
 }
 
 
@@ -418,6 +453,11 @@ form button{
         font-size: 10px;
         color: #fff;
         background-color: #000;
+    }
+    .socai-links{
+        width: 100%;
+        right: -70px;
+        margin-top: 20px;
     }
     .footer-1-container li{
         font-size: 13px;

@@ -30,3 +30,12 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+
+  //ANIMATION
+  const click = document.getElementById('#animate');
+
+  function PicAnimate(){
+     const animi = document.querySelector(".animy").style.display = "block"; 
+  }
+
+  click.addEventListener("click", PicAnimate);
